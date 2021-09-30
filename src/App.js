@@ -33,7 +33,6 @@ const emojiObject = {
   "🤬": "Face with Symbols on Mouth",
   "😈": "Smiling Face with Horns",
   "👿": "Angry Face with Horns",
-
   "🦶": "Foot",
   "👂": "Ear",
   "🤏": "Pinching hand",
@@ -46,12 +45,10 @@ const emojiObject = {
   "👎": "Thumbs down",
   "👋": "Waving hand",
   "✍": "Writing hand",
-
   "🔥": "lit",
   "💯": "awesome",
   "🍕": "pizza",
   "🍔": "burger",
-  "🍳": "eggs",
   "🍜": "noodles",
   "🍚": "rice",
   "🥗": "vegetable bowl",
@@ -77,7 +74,10 @@ export default function App() {
   return (
     <div className="App">
       <h1>Emoticons pile</h1>
-      <input onChange={inputChangeHandler}></input>
+      <input
+        placeholder="enter your favourite emojis to know their meaning"
+        onChange={inputChangeHandler}
+      ></input>
       <h2>{meaning}</h2>
       <div className="container">
         <h3>Emojis we know</h3>
